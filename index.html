@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Yashvi ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+BACKGROUND
+========================= -->
+
+<div class="background">
+
+<div class="circle c1"></div>
+<div class="circle c2"></div>
+<div class="circle c3"></div>
+
+<div class="hearts">
+
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+<span>❤</span>
+
+</div>
+
+</div>
+
+<!-- =========================
+MUSIC BUTTON
+========================= -->
+
+<button class="music-btn" id="musicBtn">
+
+<i class="fa-solid fa-music"></i>
+
+</button>
+
+<audio id="bgMusic" loop>
+
+<source src="music1.mp3">
+
+</audio>
+
+<!-- =========================
+WELCOME PAGE
+========================= -->
+
+<section class="page active" id="welcomePage">
+
+    <button class="back-btn">
+    <i class="fa-solid fa-arrow-left"></i> Back
+</button>
+
+<div class="card">
+
+<p class="small-title">
+
+✨ A Beautiful Day ✨
+
+</p>
+
+<h1>
+
+<span class="happy">
+
+Happy
+
+</span>
+
+Birthday
+
+<span class="name">
+
+Yashvi ❤️
+
+</span>
+
+</h1>
+
+<p class="subtitle">
+
+Today isn't just another day...
+
+It's the day the most beautiful girl in my world was born.
+
+</p>
+
+<div class="photo-box">
+
+<img src="assets/images/yashvi.jpg" alt="Yashvi">
+
+</div>
+
+<button class="main-btn" id="openGift">
+
+🎁 Open Your Gift
+
+</button>
+
+</div>
+
+</section>
+
+<!-- =========================
+GIFT PAGE
+========================= -->
+
+<section class="page" id="giftPage">
+
+    <button class="back-btn">
+    <i class="fa-solid fa-arrow-left"></i> Back
+</button>
+
+<div class="gift-card">
+
+<div class="cat">
+
+<img src="assets/gif/5.gif" alt="GIFT BOX">
+
+</div>
+
+<div class="bubble">
+
+Click the Gift ❤️
+
+</div>
+
+<div class="gift-box" id="giftBox">
+
+<img src="assets/gif/gift.png">
+
+</div>
+
+<h2>
+
+A Little Surprise
+
+Is Waiting...
+
+</h2>
+
+<p>
+
+Tap the Gift Box
+
+</p>
+
+</div>
+
+</section>
+<!-- =========================
+LETTER PAGE
+========================= -->
+
+<section class="page" id="letterPage">
+
+    <button class="back-btn">
+    <i class="fa-solid fa-arrow-left"></i> Back
+</button>
+
+    <div class="letter-card">
+
+        <h2 class="letter-title">
+            💌 A Letter For You
+        </h2>
+
+        <div class="letter-text">
+
+            <p>
+                Dear <span>Yashvi ❤️</span>,
+            </p>
+
+            <p>
+                Happy Birthday to the most beautiful person in my life.
+            </p>
+
+            <p>
+                Thank you for making every moment special.
+                Your smile makes my day brighter and your happiness means everything to me.
+            </p>
+
+            <p>
+                I hope all your dreams come true and today becomes one of the happiest days of your life.
+            </p>
+
+            <p>
+                I will always be there for you...
+            </p>
+
+            <h3>
+                Happy Birthday Once Again ❤️
+            </h3>
+
+        </div>
+
+        <button class="main-btn" id="goMemory">
+            📸 see Memories
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+MEMORIES
+========================= -->
+
+<section class="page" id="memoryPage">
+
+    <button class="back-btn">
+    <i class="fa-solid fa-arrow-left"></i> Back
+</button>
+
+    <div class="memory-card">
+
+        <h2>
+
+            📸  Beautiful Memories
+
+        </h2>
+
+        <div class="memory-frame">
+
+            <img
+            src="assets/images/memory1.jpg"
+            id="memoryImage">
+
+        </div>
+
+        <p id="memoryQuote">
+
+            "Every moment with you is a beautiful memory."
+
+        </p>
+
+        <button
+        class="main-btn"
+        id="voiceBtn">
+
+            🎤 Voice Note
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+VOICE NOTE
+========================= -->
+
+<section class="page" id="voicePage">
+
+    <button class="back-btn">
+    <i class="fa-solid fa-arrow-left"></i> Back
+</button>
+
+<div class="voice-card">
+
+<h2>
+
+🎙️ Special Voice Message
+
+</h2>
+
+<p>
+
+Click below and listen carefully ❤️
+
+</p>
+
+<button
+class="voice-play"
+id="playVoice">
+
+▶ Play Voice Note
+
+</button>
+
+<div class="voice-progress">
+
+<span id="currentTime">00:00</span>
+
+<input
+type="range"
+id="voiceProgress"
+value="0"
+min="0"
+max="100">
+
+<span id="totalTime">00:00</span>
+
+</div>
+
+<audio id="voiceAudio">
+
+<source src="music1.mp3">
+
+</audio>
+
+<button
+class="main-btn"
+id="thankBtn"
+style="display:none;">
+
+💖 Say Thank You
+
+</button>
+
+</div>
+
+</section>
+
+<!-- =========================
+THANK YOU
+========================= -->
+
+<section class="page" id="thankPage">
+
+    <button class="back-btn">
+    <i class="fa-solid fa-arrow-left"></i> Back
+</button>
+
+<div class="thank-card">
+
+<img src="thank.gif" class="thank-gif">
+
+<h1 class="welcome-text">WELCOME ❤️</h1>
+
+
+
+</section>
+
+<footer>
+
+Made with ❤️ by Vivek
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
